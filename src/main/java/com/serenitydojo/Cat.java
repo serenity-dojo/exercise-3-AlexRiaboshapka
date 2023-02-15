@@ -1,14 +1,14 @@
 package com.serenitydojo;
 
-public class Dog extends Pet {
-    private static final String DOG_NOISE = "Woof";
-    private final String favoriteToy;
+public class Cat extends Pet {
+    private static final String CAT_NOISE = "Myo";
+    private final String favoriteFood;
     private final int age;
     private boolean isFed = false;
 
-    public Dog(String name, String favoriteFood, int age) {
+    public Cat(String name, String favoriteFood, int age) {
         super(name);
-        this.favoriteToy = favoriteFood;
+        this.favoriteFood = favoriteFood;
         this.age = age;
     }
 
@@ -21,8 +21,8 @@ public class Dog extends Pet {
      *
      * @return
      */
-    public String getFavoriteToy() {
-        return favoriteToy;
+    public String getFavoriteFood() {
+        return favoriteFood;
     }
 
     public int getAge() {
@@ -30,7 +30,7 @@ public class Dog extends Pet {
     }
 
     public void makeNoise() {
-        System.out.println(DOG_NOISE);
+        System.out.println(CAT_NOISE);
     }
 
     public void feed() {
